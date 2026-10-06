@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+:root {
+  --color-charcoal: #171614;
+  --color-stone: #B7AA95;
+  --color-bone: #F2EEE7;
+  --color-olive: #41483A;
+  --border-hairline: rgba(23, 22, 20, 0.12);
+  --border-hairline-dark: rgba(242, 238, 231, 0.14);
+}
+
+@theme {
+  --color-charcoal: var(--color-charcoal);
+  --color-stone: var(--color-stone);
+  --color-bone: var(--color-bone);
+  --color-olive: var(--color-olive);
+  --font-serif: "Cormorant Garamond", Georgia, serif;
+  --font-sans: "DM Sans", -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+@layer base {
+  html {
+    background-color: var(--color-bone);
+    color: var(--color-charcoal);
+    font-family: var(--font-sans);
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: var(--color-bone);
+    color: var(--color-charcoal);
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, .font-editorial {
+    font-family: var(--font-serif);
+    font-weight: 400;
+  }
+}
+
+.hairline-border {
+  border-color: var(--border-hairline);
+}
+
+.hairline-border-dark {
+  border-color: var(--border-hairline-dark);
+}
+
+/* Hide scrollbar for clean horizontal category navigation on mobile */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

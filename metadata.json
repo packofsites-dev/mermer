@@ -1,0 +1,6 @@
+{
+  "name": "MƏRMƏR — Müasir Azərbaycan Mətbəxi",
+  "description": "Kökümüzdən gələn, bu günə aid. İçərişəhərin daş divarları arasında müasir Azərbaycan mətbəxi.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
